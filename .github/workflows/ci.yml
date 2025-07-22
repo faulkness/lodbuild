@@ -24,9 +24,10 @@ jobs:
           ./build_scripts/build_installer.bat
 
       # Smoke test: launch the exe, load first scene, run a sample command
-      - name: Smoke test
-        run: |
-          .\build\LegendOfDragoon_Disc1_Setup.exe --test-mode
+      - - name: Smoke test
+  run: |
+  .\build\LegendOfDragoon_Disc1.exe --test-mode
+
         continue-on-error: false
 
       # Calculate checksum
